@@ -114,11 +114,12 @@ export default function Portfolio() {
           <div className="hero-art">
             <div className="portrait-coordinate mono">HUMAN / ENGINEER</div>
             <div className="portrait-frame">
+              {/* Use the supplied full-frame photo; the shared CSS keeps its grayscale treatment. */}
               <img
-                src="/david.png"
+                src="/david-portrait.jpg"
                 alt="David Magbee"
-                width={1000}
-                height={1031}
+                width={1200}
+                height={900}
                 fetchPriority="high"
               />
               <div className="portrait-scan" />

@@ -71,6 +71,29 @@ git push origin main
 
 **Manual QA:** open View résumé and Download PDF; compare each served file to the approved original, including the retained quantitative wording. Check that the PDF URL remains unchanged and the evidence register identifies the pending label clarification.
 
+### Follow-up: supplied full-frame portrait
+
+**Commit:** `fix(portrait): use supplied full-frame photo with grayscale styling`
+
+**Change:** Replace the circular-cut hero asset with David’s supplied full photo, encoded as a browser-compatible JPEG. Update intrinsic dimensions, remove the unused PNG, and strip location/descriptive metadata from the web export while preserving its compressed pixel stream. Existing CSS grayscale, contrast, framing and responsive behavior remain in place.
+
+**Content evidence:** User-supplied `magbee-portrait.jpeg`, November 13, 2026; the attachment is HEIF despite its filename. The web JPEG preserves the source composition; no generated or altered facial content. See CONTENT-SOURCES.md.
+
+**Verification:** `npm run check`, `npm run build`; inspect the desktop hero in both themes and the mobile layout, confirm the image loads and computed CSS retains grayscale.
+
+**Limits:** Normal CSS framing uses `object-fit: cover`; the source asset has no circular cutout. Existing narrow-mobile layout hides the decorative portrait.
+
+**Staging:** portrait change is separate from the approved résumé restoration:
+
+```sh
+git rm public/david.png
+git add app/page.tsx public/david-portrait.jpg docs/CONTENT-SOURCES.md docs/RELEASE.md docs/preview/desktop-dark.jpg docs/preview/desktop-light.jpg
+git commit -m "fix(portrait): use supplied full-frame photo with grayscale styling"
+git push origin main
+```
+
+**Manual QA:** reload the hero in dark and light themes, confirm the full-photo source fills a rectangular frame and appears grayscale, then check narrow mobile for overflow. Open View résumé and Download PDF to confirm the approved original remains available.
+
 ## Manual QA
 
 1. Open the preview at desktop and mobile widths; follow Work, Experience, Toolkit and contact links. Confirm readable layout and no horizontal scrolling.

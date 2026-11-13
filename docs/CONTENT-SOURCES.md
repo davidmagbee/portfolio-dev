@@ -34,7 +34,8 @@ Existing portfolio checkpoint: `b36dcdcfebcf73ffbb2df91dcd637ac5b1662bac`, `main
 - Small Wins: `/projects/small-wins.jpg` reuses the existing portfolio’s authentic guest-workspace screenshot. Prior provenance: `portfolio-modern/docs/CONTENT-SOURCES.md:34` and `docs/PORTFOLIO-QA.md:22`. Its original file had a `.png` suffix but JPEG contents; the new suffix should match those bytes. It is an earlier capture, not a screenshot made during this task.
 - Redwood: `/projects/redwood-development.jpg` reuses the actual local development homepage capture documented in `portfolio-modern/docs/CONTENT-SOURCES.md:33`, dated November 4, 2026. Synthetic events remain identified as demonstration content. The image does not establish current feature completeness.
 - RepairVantage: `image: ''` intentionally avoids the old prototype/demo screenshot. Any replacement schematic is an original explanatory illustration and must be identified as such, never presented as a current product screenshot.
-- Portraits and other assets are handled separately from this content module. Supporting tenure narratives, Jira exports and customer records are not website assets.
+- Portrait: David supplied `magbee-portrait.jpeg` in this chat on November 13, 2026 to replace the circular-cut source. The attachment contains HEIF data despite its filename. `public/david-portrait.jpg` is a web-compatible JPEG export of the full composition at 1200 × 900 pixels. The source attachment remains unchanged. Embedded EXIF/XMP/IPTC/comment metadata is removed from the web export without changing its compressed pixel stream; the website applies grayscale, contrast, and the rectangular display frame through CSS. No generated or altered facial content. The unused circular asset was removed.
+- Supporting tenure narratives, Jira exports and customer records are not website assets.
 
 ## Excluded or unresolved
 
