@@ -1,0 +1,44 @@
+{
+  "source": "Previously approved David-Magbee-Resume-Final.docx, inspected locally; original preserved",
+  "source_sha256": "3614db5acecdfdd80eb954efc91950cfab3bbe199f8e32ac44a55581a4d89ad2",
+  "candidate": "public/David-Magbee-Resume.docx",
+  "changed_paragraphs": [6, 7, 8, 41, 47, 49, 53, 55],
+  "replacements": [
+    {
+      "before": "Delivered full-stack improvements across onboarding, account setup, billing, banking integrations, and self-service account management at Cookie Finance, directly improving user activation, conversion reliability, and product trust in a sensitive financial workflow context.",
+      "after": "Delivered full-stack improvements across onboarding, account setup, billing, banking integrations, and self-service account management at Cookie Finance."
+    },
+    {
+      "before": "Mentored 200+ students as Software Engineering Lead Instructor at General Assembly; achieved a 4.9/5 NPS and a perfect 100 NPS team score sustained across multiple cohorts.",
+      "after": "Mentored students as Software Engineering Lead Instructor at General Assembly and led an instructional team across multiple cohorts."
+    },
+    {
+      "before": "Community Building at Scale: ",
+      "after": "Developer Community Leadership: "
+    },
+    {
+      "before": "Led the Songbird network launch at Flare, growing a developer community to 250K+ members and improving platform usability through tailored technical documentation and a strategic partnership roadmap.",
+      "after": "Led developer relations for the Songbird network launch at Flare, creating developer-focused technical documentation and a strategic partnership roadmap."
+    },
+    {
+      "before": "Led the Songbird network launch and developer community growth to 250K+ members.",
+      "after": "Led developer relations for the Songbird network launch and its developer community."
+    },
+    {
+      "before": "Mentored 200+ students through a full-stack software engineering immersive.",
+      "after": "Mentored students through a full-stack software engineering immersive."
+    },
+    {
+      "before": "Led an instructional team that sustained a 100 NPS score across multiple consecutive cohorts.",
+      "after": "Led an instructional team across multiple cohorts."
+    },
+    {
+      "before": "Managed 20+ healthcare practice launches, coordinating medical board credentialing and operational workflows.",
+      "after": "Managed healthcare practice launches, coordinating medical board credentialing and operational workflows."
+    },
+    {
+      "before": "Redesigned client onboarding processes, reducing practice setup time by 27%.",
+      "after": "Redesigned client onboarding processes."
+    }
+  ]
+}
