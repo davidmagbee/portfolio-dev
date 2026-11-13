@@ -38,7 +38,7 @@ Existing portfolio checkpoint: `b36dcdcfebcf73ffbb2df91dcd637ac5b1662bac`, `main
 
 ## Excluded or unresolved
 
-- The authored webpage makes no quantified customer/revenue/activation/conversion/performance claims, community counts, NPS, student counts, or coverage claims. The downloadable résumé uses the same conservative claim boundary; see below. No independent employment or outcome verification is implied.
+- The authored webpage makes no quantified customer/revenue/activation/conversion/performance claims, community counts, NPS, student counts, or coverage claims. The unchanged approved résumé includes owner-confirmed quantified and outcome claims; its separate scope is recorded below. No independent employment or outcome verification is implied.
 - No claim of model training, production LLM API integration/evaluation, or AI product deployment. The supported AI history is development tooling and integration of the data team’s internal model.
 - No assumed geographic base, remote/relocation constraints, work authorization, salary target, or availability date.
 - No employment-date precision below the month. “Present” for freelance follows the latest supplied résumé and has not been independently reconfirmed.
@@ -46,11 +46,13 @@ Existing portfolio checkpoint: `b36dcdcfebcf73ffbb2df91dcd637ac5b1662bac`, `main
 
 ## Downloadable résumé
 
-The supplied, previously approved final résumé was the starting point for `public/David-Magbee-Resume.docx` and its rendered `public/David-Magbee-Resume.pdf`. The initial public release omits unverified quantified outcomes in accordance with the owner’s evidence requirement. The source originals remain unchanged locally.
+`public/David-Magbee-Resume.pdf` and `public/David-Magbee-Resume.docx` are byte-identical copies of the previously approved final résumé files. David explicitly chose the unchanged PDF on November 13, 2026: “Use approved PDF unchanged; I confirm those claims and will clarify ‘4.9/5 NPS’.” No résumé wording was rewritten during restoration; source originals remain unchanged.
 
-[RESUME-CHANGES.json](RESUME-CHANGES.json) records exact targeted substitutions. Removed: causal activation/conversion/trust outcomes, student/community/practice counts, NPS figures and the practice-setup percentage. Responsibilities remain. Detailed Cookie Finance employment paragraphs are unchanged. No replacement figures or feedback metric names were invented. All other paragraphs were compared against the approved original and retained.
+**Owner-confirmed, source-reported claims:** 200+ students, reported NPS results across cohorts, developer-community growth to 250K+ members, 20+ practice launches, 27% reduction in practice setup time, and activation/conversion/product-trust outcomes. The owner’s confirmation supplies first-person evidence; underlying measurement records were not independently audited in this task. The authored webpage retains its narrower qualitative wording.
 
-Both rendered pages were visually reviewed for clipping, overflow and readability; page count remains two. The PDF contains five link annotations. Employment and contribution history remain source-reported. A clarification question about the removed claims was raised; specific metrics can be restored after confirmation. The original phrase “4.9/5 NPS” requires metric-name clarification as well as evidence.
+**Unknown:** what metric the original phrase “4.9/5 NPS” names. David will clarify this label. Per his explicit instruction, the approved PDF retains that wording until he provides the correction; no replacement metric or interpretation is inferred.
+
+[RESUME-CHANGES.json](RESUME-CHANGES.json) is a **superseded historical record** of the metric-free derivative used in initial commit `c4b2c58`. Its replacements do not describe the current downloadable assets. The approved originals have been restored following David’s response.
 
 ## Scheduling destination
 

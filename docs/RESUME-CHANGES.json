@@ -1,7 +1,6 @@
 {
   "source": "Previously approved David-Magbee-Resume-Final.docx, inspected locally; original preserved",
   "source_sha256": "3614db5acecdfdd80eb954efc91950cfab3bbe199f8e32ac44a55581a4d89ad2",
-  "candidate": "public/David-Magbee-Resume.docx",
   "changed_paragraphs": [6, 7, 8, 41, 47, 49, 53, 55],
   "replacements": [
     {
@@ -40,5 +39,10 @@
       "before": "Redesigned client onboarding processes, reducing practice setup time by 27%.",
       "after": "Redesigned client onboarding processes."
     }
-  ]
+  ],
+  "status": "superseded; historical initial-release substitutions only",
+  "superseded_by": "Owner confirmation on November 13, 2026: restore approved PDF unchanged; metric-name clarification pending for 4.9/5 NPS",
+  "historical_candidate": "Metric-free derivative used in initial commit c4b2c58; no longer the public resume",
+  "current_assets": ["public/David-Magbee-Resume.pdf", "public/David-Magbee-Resume.docx"],
+  "current_asset_policy": "Unchanged approved originals; recorded replacements are historical, not current"
 }

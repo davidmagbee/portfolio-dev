@@ -20,7 +20,7 @@ The new repository is `davidmagbee/portfolio-dev`. Do not stage or change the si
 
 ### Change
 
-Build David Magbee’s original portfolio in a separate repository. Visitors can explore verified career/project content, filter live versus development work, read expandable engineering notes, switch light/dark themes, view/download the résumé, and reach the existing Google booking listing. A native dialog offers curated answers about David’s work and career direction.
+Build David Magbee’s original portfolio in a separate repository. Visitors can explore source-supported career/project content, filter live versus development work, read expandable engineering notes, switch light/dark themes, view/download the résumé, and reach the existing Google booking listing. A native dialog offers curated answers about David’s work and career direction.
 
 Use Next.js and TypeScript with static export, locally bundled fonts, an owned portrait and existing project screenshots. Document the source audit and content evidence. Add CI type checking and production builds.
 
@@ -43,13 +43,33 @@ See [CONTENT-SOURCES.md](CONTENT-SOURCES.md). Employment is source-reported; pro
 
 ### Limits
 
-Public webpage copy avoids unverified performance metrics. The downloadable résumé is a metric-free derivative of the approved original; exact substitutions are recorded in RESUME-CHANGES.json. Detailed experience is preserved; originals remain unchanged. Third-party app Google sign-in, email delivery and account-linking flows were not exercised as part of this portfolio task. No claim that those flows pass is implied by a project link.
+Public webpage copy avoids unverified performance metrics. The downloadable résumé is the unchanged approved original, restored after David confirmed its quantitative and outcome claims. The “4.9/5 NPS” metric name awaits his clarification; the PDF retains approved wording. RESUME-CHANGES.json is a superseded historical record of the initial derivative. Third-party app Google sign-in, email delivery and account-linking flows were not exercised as part of this portfolio task. No claim that those flows pass is implied by a project link.
 
 A new owner-private Sites preview is separate from the public source repository and the existing custom-domain portfolio.
 
 ## PR body delta
 
-Not applicable: initial implementation; no earlier code push or PR description exists.
+### Follow-up: approved résumé restoration
+
+**Commit:** `fix(resume): restore unchanged approved resume assets`
+
+**Change:** Restore byte-identical approved PDF and DOCX assets following David’s confirmation. Keep existing view/download URLs. Update README, evidence register and release limits; mark the initial derivative’s substitution record superseded. Page copy and visitor controls are unchanged.
+
+**Content evidence:** David’s November 13, 2026 reply confirms the counts and outcomes and explicitly selects the unchanged PDF. These remain owner-confirmed, source-reported claims. Clarification of the original “4.9/5 NPS” label is pending; no inferred relabeling is applied.
+
+**Verification:** `npm run check` and `npm run build`; compare approved originals against public and exported PDF/DOCX bytes; confirm view/download links still resolve to `/David-Magbee-Resume.pdf`.
+
+**Limits:** No independent measurement audit. Keep “4.9/5 NPS” clarification open until David supplies corrected terminology.
+
+**Staging:** one cohesive restoration:
+
+```sh
+git add public/David-Magbee-Resume.pdf public/David-Magbee-Resume.docx README.md docs/CONTENT-SOURCES.md docs/RESUME-CHANGES.json docs/RELEASE.md
+git commit -m "fix(resume): restore unchanged approved resume assets"
+git push origin main
+```
+
+**Manual QA:** open View résumé and Download PDF; compare each served file to the approved original, including the retained quantitative wording. Check that the PDF URL remains unchanged and the evidence register identifies the pending label clarification.
 
 ## Manual QA
 

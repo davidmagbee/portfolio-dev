@@ -34,9 +34,9 @@ npm run preview
 
 ## Content and provenance
 
-Edit `data/profile.ts` for career, project, toolkit, and guide content. The supporting narrative and career direction live in `app/page.tsx`. The public résumé asset is `public/David-Magbee-Resume.pdf`, a metric-free derivative of the approved original. Exact targeted substitutions are documented in `docs/RESUME-CHANGES.json`; original local files are preserved.
+Edit `data/profile.ts` for career, project, toolkit, and guide content. The supporting narrative and career direction live in `app/page.tsx`. The public résumé assets, `public/David-Magbee-Resume.pdf` and its DOCX companion, are unchanged copies of David’s approved originals. David confirmed the quantitative and outcome claims on November 13, 2026; the original “4.9/5 NPS” wording remains pending his metric-name clarification. See the content register for scope and provenance.
 
-[Content sources](docs/CONTENT-SOURCES.md) distinguish source-reported career information, repository-backed project behavior, owner-stated goals, and remaining unknowns. Live project labels describe linked foundations; development-only features are called out in engineering notes. Public portfolio copy asserts no measured performance improvements.
+[Content sources](docs/CONTENT-SOURCES.md) distinguish source-reported career information, repository-backed project behavior, owner-stated goals, and remaining unknowns. Live project labels describe linked foundations; development-only features are called out in engineering notes. Authored webpage copy makes no quantitative performance claims; the downloadable résumé retains David’s separately confirmed claims.
 
 [Reference audit](docs/REFERENCE-AUDIT.md) documents the Emmanuel portfolio’s mechanics and what informed this original implementation. No reference source code, portrait, résumé, AI endpoint, or activity proxy was copied. REA was reviewed; direct source inspection was sufficient.
 
