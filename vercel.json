@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/projects/repairvantage.png",
+      "destination": "/projects/repairvantage.jpg",
+      "permanent": false
+    },
+    {
+      "source": "/projects/small-wins.png",
+      "destination": "/projects/small-wins.jpg",
+      "permanent": false
+    }
+  ]
+}

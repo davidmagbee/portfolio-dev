@@ -104,23 +104,28 @@ export const experience: Experience[] = [
 ];
 
 /**
- * Status describes the linked product, not every development-branch feature.
- * An empty image requests an original schematic instead of a stale screenshot.
- * Missing destinations are intentional: private or unpublished work gets no CTA.
+ * Statuses may overlap: a live foundation can still have features in development.
+ * An empty list makes no live/development assertion; a public repository can
+ * still be shown as source available. Missing destinations are intentional.
  */
+export type ProjectStatus = 'Live' | 'In development';
+
 export interface Project {
   id: string;
   title: string;
   eyebrow: string;
-  status: 'Live' | 'In development';
+  statuses: ProjectStatus[];
   summary: string;
   detail: string;
   stack: string[];
   image: string;
+  imageWidth: number;
+  imageHeight: number;
   alt: string;
   caption: string;
   href?: string;
   repository?: string;
+  demo?: string;
 }
 
 export const projects: Project[] = [
@@ -128,28 +133,33 @@ export const projects: Project[] = [
     id: 'repairvantage',
     title: 'RepairVantage',
     eyebrow: 'Repair projects, from plan to progress',
-    status: 'Live',
+    statuses: ['Live', 'In development'],
     summary:
       'A private workspace for repair projects, with owner-controlled sharing and unlisted Showcase links.',
     detail:
       'The live foundation supports project editing, invitations, comments, and unlisted Showcase links. Task assignment, inventory, scheduling, and reports are implemented on the development branch and await release.',
     stack: ['React', 'TypeScript', 'GraphQL', 'Better Auth', 'Prisma', 'PostgreSQL'],
-    image: '',
-    alt: '',
-    caption: 'Architecture sketch · live foundation with additional features in development',
+    image: '/projects/repairvantage.jpg',
+    imageWidth: 1272,
+    imageHeight: 716,
+    alt: 'Earlier RepairVantage prototype dashboard with demonstration project totals, deadlines, and activity',
+    caption: 'Earlier prototype screenshot · demonstration data',
     href: 'https://repairvantage.davidmagbee.com/',
+    repository: 'https://github.com/davidmagbee/RepairVantage',
   },
   {
     id: 'small-wins',
     title: 'Small Wins',
     eyebrow: 'A focused task workspace',
-    status: 'Live',
+    statuses: ['Live'],
     summary:
       'Private task lists with guest and account workspaces, search and status filters, and keyboard commands.',
     detail:
       'Built with TanStack Start and PostgreSQL. Tasks support priorities, due dates, and tags; email-code sign-in switches to an account list. Guest and account tasks stay separate.',
     stack: ['React', 'TypeScript', 'TanStack Start', 'PostgreSQL', 'Better Auth'],
     image: '/projects/small-wins.jpg',
+    imageWidth: 544,
+    imageHeight: 858,
     alt: 'Small Wins guest workspace with search, status filters, and a task creation form',
     caption: 'Actual app · guest task workspace',
     href: 'https://small-wins-davidmagbee.vercel.app/',
@@ -159,13 +169,15 @@ export const projects: Project[] = [
     id: 'redwood',
     title: 'Where in the Hell Is Redwood, NY?',
     eyebrow: 'A home for a small community',
-    status: 'In development',
+    statuses: ['In development'],
     summary:
       'A community website for Redwood, New York, bringing local events and reviewed publishing into one place.',
     detail:
       'The development app includes event search, accounts and roles, staff review, and protected owner access. History, photos, notices, and the fuller calendar experience remain part of the launch roadmap.',
     stack: ['Next.js', 'TypeScript', 'GraphQL', 'PostgreSQL', 'Better Auth'],
     image: '/projects/redwood-development.jpg',
+    imageWidth: 1280,
+    imageHeight: 1942,
     alt: 'Redwood development homepage with a preview notice, community introduction, and event search',
     caption: 'Actual development preview · synthetic demonstration events',
   },

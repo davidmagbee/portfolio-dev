@@ -60,17 +60,16 @@ export default function Portfolio() {
       </header>
       <main id="main">
         <section className="hero wrap" id="top" aria-labelledby="hero-title">
-          <div className="hero-copy">
+          {/* Preserve the current portfolio's shared fragment URLs during the replacement. */}
+          <div className="hero-copy" id="hero">
             <div className="availability mono">
               <span className="status-dot" />
-              OPEN TO SENIOR ENGINEERING ROLES
+              Open to remote senior engineering roles
             </div>
             <h1 id="hero-title">
               David
               <br />
-              <span>
-                Magbee<span className="name-period">.</span>
-              </span>
+              <span>Magbee</span>
             </h1>
             <p className="hero-role">
               Software engineer.
@@ -114,24 +113,22 @@ export default function Portfolio() {
           <div className="hero-art">
             <div className="portrait-coordinate mono">HUMAN / ENGINEER</div>
             <div className="portrait-frame">
-              {/* Use the supplied full-frame photo; the shared CSS keeps its grayscale treatment. */}
-              <img
-                src="/david-portrait.jpg"
-                alt="David Magbee"
-                width={1200}
-                height={900}
-                fetchPriority="high"
-              />
-              <div className="portrait-scan" />
+              <div className="portrait-image">
+                {/* CSS frames a square head-and-shoulders crop; the original photo stays intact. */}
+                <img
+                  src="/david-portrait.jpg"
+                  alt="David Magbee"
+                  width={1200}
+                  height={900}
+                  fetchPriority="high"
+                />
+                <div className="portrait-scan" />
+              </div>
               <span className="crosshair crosshair-tl" />
               <span className="crosshair crosshair-br" />
             </div>
-            <div className="portrait-footer mono">
-              <span>FULL-STACK ENGINEERING</span>
-              <span>DM / ↗</span>
-            </div>
             <div className="floating-note">
-              <Code2 size={18} />
+              <Code2 size={18} aria-hidden="true" />
               <span>
                 From interface
                 <br />
@@ -178,7 +175,7 @@ export default function Portfolio() {
           </div>
         </section>
         <section className="work-section wrap section" id="work" aria-labelledby="work-title">
-          <div className="section-top">
+          <div className="section-top" id="projects">
             <div>
               <p className="section-label mono">01 / SELECTED WORK</p>
               <h2 id="work-title">
@@ -245,7 +242,7 @@ export default function Portfolio() {
           id="toolkit"
           aria-labelledby="toolkit-title"
         >
-          <div className="section-top">
+          <div className="section-top" id="skills">
             <div>
               <p className="section-label mono">03 / TOOLKIT</p>
               <h2 id="toolkit-title">
